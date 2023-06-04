@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import logo from '../photo/logo.png';
 import { useState, useEffect } from 'react';
 import { Menu } from '@material-ui/core';
+import DropMenu from './DropMenu';
+
 
 function Navbar() {
   const [color, setColor] = useState(false);
@@ -56,6 +58,10 @@ function Navbar() {
           </li>
           <li className=' ml-5'>
             <Link className='text-sm font-montserrat font-bold text-white' to="/contact">Contact Us</Link>
+          </li>
+          <li className=' ml-5'>
+            <DropMenu className='text-sm font-montserrat font-bold text-white' />
+            {/* <Link className='text-sm font-montserrat font-bold text-white' to="/drop">hererere</Link> */}
           </li>
         </ul> 
     </div>

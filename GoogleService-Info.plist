@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>517996984409-l95tr0nodhclsverl5r2suc6khqp5vu8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.517996984409-l95tr0nodhclsverl5r2suc6khqp5vu8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCkLknIWMVPPbMiHNTyqU7xKJkaPBk5IOc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>517996984409</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.danieladekunle.foundme</string>
+	<key>PROJECT_ID</key>
+	<string>found-me-b64e7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>found-me-b64e7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:517996984409:ios:9c8a2fffde221ca696d948</string>
+	<key>DATABASE_URL</key>
+	<string>https://found-me-b64e7-default-rtdb.europe-west1.firebasedatabase.app</string>
+</dict>
+</plist>

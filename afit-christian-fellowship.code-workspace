@@ -2,6 +2,18 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../found-me"
+		},
+		{
+			"path": "../../lost_found"
+		},
+		{
+			"path": "../find-me"
+		},
+		{
+			"path": "../Academate"
 		}
 	]
 }
