@@ -5,6 +5,7 @@ import { Box, Container } from '@mui/system';
 import React from 'react';
 import AnimatedText from '../Holder/AnimatedText';
 import Anouncement from '../Holder/Anouncement/Anouncement';
+import Events from '../Holder/Anouncement/Events';
 import Flier from '../Holder/Anouncement/Flier/Flier';
 import Exapt from '../Holder/Exapt/Exapt';
 import Exapts from '../Holder/Exapt/Exapts';
@@ -36,13 +37,14 @@ function header() {
           <Typography className='text-sky-400 sm:text-2xl md:text-2xl lg:text-7xl xl:text-7xl decoration-8 font-montserrat font-bold whitespace-nowrap'>AFIT CHRISTIAN FELLOWSHIP</Typography>
           <AnimatedText 
             className='opacity-0 lg-1 font-montserrat font-bold mt-7 '
-            text='We are arrows to our generation. We are a peculiar people. We are a people of God.' 
+            text='Promoting The Unity Of The Saints.' 
           />
         </div>
       </div>
     </Box>
     {/* <Flier/> */}
     <Anouncement />
+    <Events/>
     <Exapt />
     <Exapts />
       <Service />

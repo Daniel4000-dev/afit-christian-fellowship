@@ -4,12 +4,15 @@ import logo from '../photo/logo.png';
 import { useState, useEffect } from 'react';
 import { Menu } from '@material-ui/core';
 import DropMenu from './DropMenu';
+import MenuIcon from '@material-ui/icons/Menu';
+import { useMediaQuery } from '@mui/material';
 
 
 function Navbar() {
   const [color, setColor] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
-  const [isHidden, setIsHidden] = useState(false)
+  const [isHidden, setIsHidden] = useState(false);
+  const isMobile = useMediaQuery('(max-width: 600px)'); 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,7 +71,10 @@ function Navbar() {
   );
 
   return (
-    <nav ref={nav} className={`flex justify-center pt-3 pb-3 w-full h-35 z-50 transition-colors duration-300`}>
+    <nav ref={nav} className={`flex justify-center pt-3 pb-3 w-full h-35 z-50 transition-colors duration-300 ${
+      isMobile ? 'hidden' : ''
+    }`}
+    >
         <img
             src={logo}
             alt=""
@@ -76,6 +82,7 @@ function Navbar() {
         />
         {Links}
         <Menu />
+        {/* <MenuIcon className="text-white"/> */}
     </nav>
   )
 }
