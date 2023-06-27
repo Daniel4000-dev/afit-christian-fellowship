@@ -7,10 +7,14 @@ import AnimatedText from '../Holder/AnimatedText';
 import Anouncement from '../Holder/Anouncement/Anouncement';
 import Events from '../Holder/Anouncement/Events';
 import Flier from '../Holder/Anouncement/Flier/Flier';
+import Testimonies from '../Holder/Anouncement/Testimonies';
+import TubeLinks from '../Holder/Anouncement/TubeLinks';
 import Exapt from '../Holder/Exapt/Exapt';
 import Exapts from '../Holder/Exapt/Exapts';
+import Excerpts from '../Holder/Exapt/Excerpts';
 import Service from '../Holder/Service';
 import Navbar from '../Navbar/Navbar';
+import Pictures from '../photo/Pictures';
 import video from '../video/video.mp4';
 
 const theme = createTheme({
@@ -45,9 +49,13 @@ function header() {
     {/* <Flier/> */}
     <Anouncement />
     <Events/>
-    <Exapt />
-    <Exapts />
-      <Service />
+    {/* <Exapt />
+    <Exapts /> */}
+    <Excerpts />
+    <TubeLinks />
+    <Pictures />
+    <Service />
+    <Testimonies />
     </ThemeProvider>
   )
 }

@@ -25,8 +25,8 @@ function Footer() {
     }
     if(!inView){
       animation.start({
-        y: '-5vw', 
-        opacity: 0
+        y: '-10vw', 
+        opacity: 0.5
       })
     }
     console.log('footer is currently inview', inView)
