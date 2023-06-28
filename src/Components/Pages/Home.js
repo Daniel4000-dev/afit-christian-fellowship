@@ -5,6 +5,7 @@ import { Box, Container } from '@mui/system';
 import React from 'react';
 import AnimatedText from '../Holder/AnimatedText';
 import Anouncement from '../Holder/Anouncement/Anouncement';
+import Description from '../Holder/Anouncement/Description';
 import Events from '../Holder/Anouncement/Events';
 import Flier from '../Holder/Anouncement/Flier/Flier';
 import Testimonies from '../Holder/Anouncement/Testimonies';
@@ -47,6 +48,7 @@ function header() {
       </div>
     </Box>
     {/* <Flier/> */}
+    <Description />
     <Anouncement />
     <Events/>
     {/* <Exapt />

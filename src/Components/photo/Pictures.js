@@ -7,11 +7,11 @@ import { IconButton, ImageListItemBar } from '@material-ui/core';
 export default function MasonryImageList() {
   return (
     <Box sx={{ overflowY: 'scroll' }} className='w-full object-contain p-4'>
-      <ImageList variant="masonry" cols={3} gap={8} className='w-full hidden lg:block'>
+      <ImageList variant="masonry" cols={3} gap={8} className='w-full h-60 hidden lg:block'>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img
-            className='h-auto '
+            className='contain '
               src={`${item.img}?w=248&fit=crop&auto=format`}
               srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
               alt={item.title}

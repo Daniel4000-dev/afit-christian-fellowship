@@ -10,8 +10,7 @@ function Events() {
     const [selectedId, setSelectedId] = useState(null)
 
     const {ref, inView} = useInView({
-        threshold: 0.3,
-        triggerOnce: true
+        threshold: 0.1,
       });
       const animation = useAnimation();
     
@@ -21,14 +20,14 @@ function Events() {
             y:0,
             opacity: 1,
             transition: {
-              duration: 2.5
+              duration: 1.5
             }
           })
         }
         if(!inView){
           animation.start({
-            y: '-10vw', 
-            opacity: 0
+            y: '10vw', 
+            opacity: 0.2
           })
         }
         console.log('footer is currently inview', inView)
@@ -40,7 +39,7 @@ function Events() {
         log2
     ]
   return (
-    <motion.div ref={ref}>
+    <motion.div ref={ref} className='bg-slate-200 pb-5'>
         <Container className='justify-items-center'>
             <motion.div animate={animation}>
                 <Typography className='text-center pt-10 pb-6'>Upcoming Events</Typography>
